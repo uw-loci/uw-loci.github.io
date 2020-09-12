@@ -12,10 +12,10 @@ This website houses LOCI's software articles:
   a primer for LOCI programmers
 * [Open Source in Science](/oss) -
   LOCI's philosophy on software development
+* [Why Java?](/why-java) -
+  why LOCI uses the Java platform
 * [Interfacing From Non-Java Code](/interfacing-non-java-code) -
   connecting Java programs across language boundaries
-* [Isn't Java Too Slow?](/isnt-java-too-slow) -
-  a brief discussion of Java's performance
 * [Debugging Techniques](/debugging-techniques) -
   a guide to debugging Java software
 
