@@ -22,3 +22,8 @@ This website houses LOCI's software articles:
 For the main LOCI website, visit [eliceirilab.org](https://eliceirilab.org).
 
 For source code of LOCI projects, visit [github.com/uw-loci](https://github.com/uw-loci).
+
+-----------------------------
+
+<img style="float: left; padding-right: 1em; vertical-align: center" src="https://raw.githubusercontent.com/zulip/zulip/main/static/images/logo/zulip-icon-circle.svg" width=48 height=48>
+LOCI uses [Zulip](https://zulip.com/), an open-source modern team chat app designed to keep both live and asynchronous conversations organized.
