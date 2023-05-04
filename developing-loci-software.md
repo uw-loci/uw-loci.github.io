@@ -28,7 +28,7 @@ their goals thousands of times faster than those who do not.
 If you dabble in programming, you may not have time to dive in to all of
 the above, and that is OK! But if your aspiration is to be a
 professional programmer, you owe it to yourself to cultivate the [three
-great virtues of a programmer](http://threevirtues.com/). Computers
+great virtues of a programmer](https://thethreevirtues.com/). Computers
 exist to automate things. You have better things to do with your life
 than tedious, repetitive tasks all day long. Automation is [*always*
 superior](https://xkcd.com/1319/). (In all seriousness: [it is often
