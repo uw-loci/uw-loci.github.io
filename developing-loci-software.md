@@ -38,11 +38,46 @@ Part of developing open-source software includes working in public and actively 
 
 ## Project Management
 
-### An Example LOCI Developer Workflow
+Software development is not just about creating code - it's also deciding the who, what, when, and even *if* code is necessary. Then there's the matter of tracking status and keeping collaborators up-to-date. All of these topics fall under the "project management" umbrella.
 
-Here is an example of how we develop at LOCI using Git and our ecosystem of tools:
+Project management can be challenging: it is understandable and okay to struggle with it at first. It is typically not taught as part of computer science coursework, and so must be learned through experience. Tasks like creating and updating issues also can feel like a barrier to doing "actual work" - why spend time on things that aren't coding?
 
-1. Start from a GitHub issue describing the work to be done (e.g., a bug report or feature request).
+Done well, healthy project management practices should actually make your life easier. Providing a clear expectation of what needs attention focuses effort, and is essential if more than one person is working on a given project to avoid collision or duplication of effort.
+
+Because our source code is stored on GitHub, the most common project management tools you will encounter are:
+- [GitHub Issues](https://github.com/features/issues) to describe, discuss, and assign tasks.
+- [Project boards](https://docs.github.com/en/issues/planning-and-tracking-with-projects) to manage collections of related Issues.
+- [Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests) to review and finalize effort.
+
+### Effective GitHub Issue Use
+
+Writing code doesn't happen in a vacuum - more precisely, a software developer translates concepts to functional implementations. Issues provide a space to flesh out and discuss those concepts, and thus are a core driver of our work.
+
+Issues often fall into one of two broad categories: new **features**, and **bug reports**. In either case, the fundamental needs are similar:
+- A clear description of the underlying concept
+- The proposed solution (potentially including why this solution is selected from a number of possibilities)
+- The "completion criteria": what will be the milestone(s) when this issue is complete?
+- In the case of bug reports, *steps to reproduce* are also essential (including environment setup)
+
+As work is done on an issue, it can be updated with comments providing status updates, asking questions, describing new problems, or even proposing implementation shifts. This provides a helpful narrative of the work, to complement the developer-focused git history.
+
+### Pull Request Best Practices
+
+Pull requests are the complement to Issues: the two bookend your work, providing at-a-glance summaries describing what to do (the issue) and what was done (the pull request). Both are used in conjunction to gather feedback, review, and validation from other (often senior) developers.
+
+Pull requests are most useful when used when *you believe your work is complete* and ready for external testing and verification; however, you can also create a [draft pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests) as a place to provide meta-information like build and testing instructions for a branch in need of support.
+
+Ideally, the Issue driving your branch should implicitly tell you when you are ready to open a pull request. The clearest indicators you can provide that the "completion criteria" have been satisfied include **unit tests** that prove the desired function or bug fix is complete, or scripts demonstrating a *user's perspective* on the new capability.
+
+Pull Requests are typically lightly populated compared to issues, but there is still some essential information to include:
+- What steps should a reviewer take to test the associated branch?
+- Are there particular areas to highlight for feedback?
+
+### Example LOCI Developer Workflow
+
+Puting everything together, here is an example of how you might expect the development loop to progress at LOCI:
+
+1. Select a GitHub issue to start working on (e.g., the highest priority issue assigned to you in a project).
 2. Clone the associated repository.
 3. Open the code in your development environment.
 4. Create a new branch dedicated to your work.
