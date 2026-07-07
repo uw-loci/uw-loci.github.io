@@ -53,6 +53,7 @@ Here is an example of how we develop at LOCI using Git and our ecosystem of tool
     * **Always** ensure you push your commits at the end of the day.
     * If the work is incomplete, prefix your commit message with `WIP:` (Work In Progress).
 9. When the work is complete, open a Pull Request (PR) to merge your changes back into `main`.
+    * **Note** - if your branch has `WIP` commits on it, it should [be rewritten](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) to remove them first!
 10. Once the Pull Request is merged, [close the original issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/administering-issues/closing-an-issue).
 
 ## LLMs at LOCI
