@@ -36,7 +36,9 @@ Part of developing open-source software includes working in public and actively 
 * **Developer chat:** [imagesc.zulipchat.com](https://imagesc.zulipchat.com/)
 * **Announcements and user feedback:** [forum.image.sc](https://forum.image.sc/)
 
-## An Example LOCI Developer Workflow
+## Project Management
+
+### An Example LOCI Developer Workflow
 
 Here is an example of how we develop at LOCI using Git and our ecosystem of tools:
 
@@ -71,15 +73,15 @@ Large Language Models (LLMs) have become powerful assistants for software develo
 
 LLMs can generate code easily and prolifically, but remember: **code is a liability**. Our goal is to build *maintainable* software; the goal isn't just *production*, but creating tools that are as easy as possible to understand and edit in the future. Before opening a PR, ask yourself: *"When a human looks at this in 5 years, will my intent be clear?"*
 
-#### What to Avoid
-* **LLMs as a proxy for human interaction:** LLMs can assist in writing e-mails and comments, but are not a substitute for your own investment and synthesis. Communication builds comprehension and engagement, and if a developer wants an LLM's opinion they could always generate one themselves. 
-* **Blind trust:** LLMs are statistical constructs, not truth engines. Be deeply skeptical of their solutions; they are highly capable of producing flawless-looking code that contains catastrophic logic errors. Just because it compiles and runs does not mean the results are correct.
-* **Skipping the conceptual work:** LLMs are not a substitute for your own understanding. If you don't know what the generated code is doing, or if it actually accomplishes your goals, you shouldn't commit it. A Pull Request should never be the first time a human actually reads, or runs, the code. Take the time to audit and test your LLM's output.
-* **Using LLMs as a debugging crutch:** LLMs are great at catching common code mistakes, but reasoning about *runtime state* requires interactive debugging techniques. 
-
 #### Effective Strategies
 * **Jump-starting ideas:** LLMs are fantastic for sketching out prototypes, brainstorming architectures, or overcoming "blank page" syndrome.
 * **Rubber ducking:** You can use LLMs as interactive [rubber ducks](https://en.wikipedia.org/wiki/Rubber_duck_debugging) to talk through complex problem logic. [MCP](https://modelcontextprotocol.io/docs/getting-started/intro) utilization can allow you to chat with an LLM while it connects with your tools in real time, providing a "consumer" perspective that is incredibly valuable.
 * **Learning high-level concepts:** They excel at explaining complex mathematical concepts, data structures, or unfamiliar APIs. Treat them as a highly customizable personal tutor.
 * **Context-driven development:** LLMs benefit immensely from explicit constraints and clear codebase context. Utilizing agentic tools or IDE integrations that have direct context of your workspace is one of the most effective ways to create a tight, productive development loop. If you're not getting the output you expect or desire, consider how you phrased your prompt and what could be more specific.
 * **Bootstrapping tests:** Writing tests is a tough discipline to build. LLMs can help generate test boilerplate—just be incredibly **wary of poor-quality tests** (e.g., tests that pass because they are developed based on the source's output, instead of the conceptual correctness).
+
+#### What to Avoid
+* **LLMs as a proxy for human interaction:** LLMs can assist in writing e-mails and comments, but are not a substitute for your own investment and synthesis. Communication builds comprehension and engagement, and if a developer wants an LLM's opinion they could always generate one themselves. 
+* **Blind trust:** LLMs are statistical constructs, not truth engines. Be deeply skeptical of their solutions; they are highly capable of producing flawless-looking code that contains catastrophic logic errors. Just because it compiles and runs does not mean the results are correct.
+* **Skipping the conceptual work:** LLMs are not a substitute for your own understanding. If you don't know what the generated code is doing, or if it actually accomplishes your goals, you shouldn't commit it. A Pull Request should never be the first time a human actually reads, or runs, the code. Take the time to audit and test your LLM's output.
+* **Using LLMs as a debugging crutch:** LLMs are great at catching common code mistakes, but reasoning about *runtime state* requires interactive debugging techniques. 
