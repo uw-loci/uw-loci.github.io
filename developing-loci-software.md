@@ -17,6 +17,13 @@ Software development is more than just writing code; every programmer should fam
 
 At LOCI, we create open-source software (OSS) with a [permissive license](https://opensource.org/licenses). A permissive open-source license is essential for open science, promoting [FAIR](https://www.go-fair.org/fair-principles/) principles, ensuring our work remains maintainable, accessible, and reusable by the broader research community.
 
+## Core Developer Attributes
+
+These are just some of the qualities we look for in developers at LOCI. Working on open source scientific software has its own set of challenges, but can also be very rewarding. As much as possible, our hope is to provide students and new developers with the tools to succeed. This section reflects on some of the personality traits that can serve you well if you're following this into a lasting career.
+
+- **Curiosity**: Technology changes rapidly and constantly. We will always be learning throughout our careers and lives. Fostering a sense of curiosity will always serve you well, whether you are learning about a new tool, or pondering why your program isn't doing what you expected. The work of a software developer-using code to manifest real changes in our world—is kind of amazing, and can serve as a constant source of wonder if we look for it.
+- **Attention to detail**: Coding an algorithm in a vacuum can be immensely satisfying, with its clearly defined edges and limits. Integrating that algorithm into a 30-year-old software project can quickly turn overwhelming. Know that you cannot account for everything in your designs, but try anyway. How are users going to interact with your code and documentation? What about developers? If you come back in 5 years will you understand the commit messages you wrote? Or the comments? Function names? Variables? Methods? Ultimately, software development is a path of continuous reflection and self-improvement. Aiming to create an elegant and robust product is practical: it's a kindness to your users, peers, and yourself.
+
 ## Guiding Principles
 
 Although programmers create code, that code is also a liability and a burden, as it includes a lasting commitment to maintenance. Below are some of the programming principles and patterns we have found useful in creating maintainable code. Over time, you will certainly build your own intuition about what works for you!
