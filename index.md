@@ -16,6 +16,7 @@ This website houses LOCI's software articles:
   why LOCI uses the Java platform
 * [Interfacing From Non-Java Code](/interfacing-non-java-code) -
   connecting Java programs across language boundaries
+* [Getting started with local LLMs](/local-llm-primer)
 * [Debugging Techniques](/debugging-techniques) -
   a guide to debugging Java software
 
