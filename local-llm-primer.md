@@ -67,7 +67,7 @@ Speculative decoding works very similarly to MTP, but is not an integrated part 
 While model weights are fixed during the training process, there are several parameters that can be considered during model runtime. Whether or not these parameters are actually exposed depends on how the model is loaded and the [harness](#harnesses) used.
 
 - **Temperature**: General probability distribution. Lower values are more deterministic; higher values are more creative/random.
-- **Min-P**: Token probability threshold, relative to the most likely token. This minimizes outlier selection when the model is confident, but encourages exploration when unsure.
+- **Min-P**: Token probability threshold, relative to the most likely token. This minimizes outlier selection when the model is confident, but encourages exploration
 - **Top-P**: Cumulative probability threshold (`0.0` to `1.0`) when predicting the next token. Lower values narrow choice to most likely tokens; higher values allow for broader selection.
 - **Top-K**: Hard cap limiting considerations for the next token to the `K` most probable options. Cuts off low-probability tail tokens.
 - **Frequency/presence penalty**: Penalize tokens for their presence in output so far. Positive values can reduce repetitive phrases.
@@ -88,7 +88,7 @@ To start using an LLM locally, it is not enough to simply download a `GGUF` file
 [Ollama](https://ollama.com/) is a "friendly," lightweight entry point open models. While a GUI app is provided, it is *very* limited to simple chats. Key functionality will, instead, be found on the web or command-line utility:
 
 - First, find a model of interest [via the model search](https://ollama.com/search). The presentation of models here is limited, which makes searching fairly straightforward.
-- For more options, and complexity, use [HuggingFace](https://huggingface.co/) to look for models. Any HF model can be referred to in Ollama via the `hf.co/\[model_maker\]/\[model_name\]:\[version_tag\]` syntax - for example, `hf.co/google/gemma-4-12B-it-qat-q4_0-gguf:latest`
+- For more options, and complexity, use [HuggingFace](https://huggingface.co/) to look for models. Any HF model can be referred to in Ollama via the `hf.co/[model_maker]/[model_name]:[version_tag]` syntax - for example, `hf.co/google/gemma-4-12B-it-qat-q4_0-gguf:latest`
 - Once you find a model of interest, use `ollama pull <model_ref>` to download it.
 - `ollama run <model_ref>` will start a local server with a specified model, going right into a chat interface.
 - Alternatively, `ollama launch <service>`  can be used to connect a (more useful) dedicated harness to a local Ollama model.
